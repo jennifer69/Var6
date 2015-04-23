@@ -25,7 +25,7 @@
         </value>
         <statement name="DO0">
           <block type="led_select" id="143" inline="true">
-            <field name="ACTION">ON</field>
+            <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="math_number" id="150">
                 <field name="NUM">5</field>
