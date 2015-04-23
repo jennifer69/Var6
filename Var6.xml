@@ -34,12 +34,41 @@
           </block>
         </statement>
         <next>
-          <block type="robot_delay" id="172" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="179">
-                <field name="NUM">150</field>
+          <block type="controls_if" id="180" inline="false">
+            <value name="IF0">
+              <block type="logic_compare" id="181" inline="true">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="sensor_object" id="182">
+                    <field name="OBJECT">RIGHTFRONT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="183">
+                    <field name="NUM">75</field>
+                  </block>
+                </value>
               </block>
             </value>
+            <statement name="DO0">
+              <block type="led_select" id="184" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="185">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="robot_delay" id="172" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="179">
+                    <field name="NUM">150</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
