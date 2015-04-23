@@ -52,7 +52,7 @@
               <block type="movement_left" id="337"></block>
             </statement>
             <statement name="ELSE">
-              <block type="movement_forward" id="327"></block>
+              <block type="movement_forward" id="327" disabled="true"></block>
             </statement>
             <next>
               <block type="robot_delay" id="205" inline="true">
