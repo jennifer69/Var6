@@ -38,26 +38,26 @@
           </block>
         </statement>
         <value name="IF1">
-          <block type="math_number" id="160">
-            <field name="NUM">0</field>
+          <block type="logic_compare" id="202" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="231">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="209">
+                <field name="NUM">75</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO1">
           <block type="led_select" id="131" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="logic_compare" id="202" inline="true">
-                <field name="OP">LT</field>
-                <value name="A">
-                  <block type="sensor_object" id="231">
-                    <field name="OBJECT">RIGHTFRONT</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="209">
-                    <field name="NUM">75</field>
-                  </block>
-                </value>
+              <block type="math_number" id="160">
+                <field name="NUM">0</field>
               </block>
             </value>
             <next>
